@@ -1,0 +1,17 @@
+{% extends 'projects/base.html' %}
+
+{% block content %}
+	<center>
+	<h1>Hello {{name}}!</h1>
+
+<!--
+	{{month}}<br/>
+	{{year}}
+-->
+
+	{{ cal|safe }}
+	<br/>
+	As Of: {{ time }}
+	</center>
+
+{% endblock %}

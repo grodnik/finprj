@@ -18,7 +18,7 @@ def home(request, year=datetime.now().year, month=datetime.now().strftime('%B'))
 	time = now.strftime('%I:%M %p')
 
 	return render(request,
-		'home.html', {
+		'projects/home.html', {
 		"name": name,
 		"year": year,
 		"month": month,
